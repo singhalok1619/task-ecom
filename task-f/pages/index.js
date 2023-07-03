@@ -16,8 +16,8 @@ function Home() {
         console.error(error);
       });
   }, []);
-  const id = 1;
-  console.log( data)
+
+  console.log(data);
 
   return (
     <>
@@ -30,7 +30,10 @@ function Home() {
           {data?.products?.map((item) => (
             <>
               <Link
-                href={{ pathname: "/product-detail", query: { id: item?.id } }}
+                href={{
+                  pathname: "/product-detail",
+                  query: { id: item?.slug },
+                }}
                 // href="/product-detail"
               >
                 <div className="bg-white rounded-lg border shadow-md max-w-xs md:max-w-none overflow-hidden cursor-pointer">

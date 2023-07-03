@@ -6,8 +6,9 @@ const ProductDeatil = () => {
   const router = useRouter();
   console.log(router.query);
   const [data, setData] = useState(null);
+  const slug = router.query;
 
-  const url = `http://localhost:5000/api/data`;
+  const url = `http://localhost:5000/api/data?slug=${slug}`;
 
   useEffect(() => {
     // Fetch data from the backend API
@@ -20,9 +21,8 @@ const ProductDeatil = () => {
         console.error(error);
       });
   }, []);
-  const id = router.query;
-  console.log(data?.products[`${id}`]);
 
+  console.log(data,'data')
   return (
     <>
       <section className="text-gray-700 body-font overflow-hidden bg-white">
@@ -181,7 +181,7 @@ const ProductDeatil = () => {
                   $ {data?.products[0]?.price}
                 </span>
                 <button className="flex ml-auto text-white bg-red-500 border-0 py-2 px-6 focus:outline-none hover:bg-red-600 rounded">
-                  Button
+                  Buy Now
                 </button>
                 <button className="rounded-full w-10 h-10 bg-gray-200 p-0 border-0 inline-flex items-center justify-center text-gray-500 ml-4">
                   <svg

@@ -12,13 +12,11 @@ app.get("/api/data", (req, res) => {
   const data = {
     products: [
       {
-        id: 1,
+        id:0,
         name: "Nike Slim shirt",
         slug: "nike-slim-shirt",
         category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
+        image: "/p1.png", // 679px × 829px
         price: 120,
         countInStock: 10,
         brand: "Nike",
@@ -27,169 +25,17 @@ app.get("/api/data", (req, res) => {
         description: "high quality shirt",
       },
       {
-        id: 2,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
+        id:1,
+        name: "Nike Pant",
+        slug: "nike-pant",
+        category: "Pants",
+        image: "/p2.png", // 679px × 829px
+        price: 200,
         countInStock: 10,
         brand: "Nike",
         rating: 4.5,
         numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 3,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 4,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 5,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 6,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 7,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 8,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 9,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 10,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 11,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
-      },
-      {
-        id: 12,
-        name: "Nike Slim shirt",
-        slug: "nike-slim-shirt",
-        category: "Shirts",
-        image: "/images/p1.jpg", // 679px × 829px
-        image:
-          "https://sc04.alicdn.com/kf/U73aa8c8500844d7c8c7dc55bb3992fec8.jpg",
-        price: 120,
-        countInStock: 10,
-        brand: "Nike",
-        rating: 4.5,
-        numReviews: 10,
-        description: "high quality shirt",
+        description: "high quality pant",
       },
     ],
   };
